@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vlad Shpyra](https://up.htmlacademy.ru/adaptive/20/user/331185).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Гинтер](https://htmlacademy.ru/profile/id781369).
 
 ---
 
