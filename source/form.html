@@ -7,13 +7,9 @@
 </head>
 <body class="page__body">
   <header class="page__header">
+    <a href="index.html"><img class="nav__link nav__link--logo" src="https://via.placeholder.com/73x23" width="74" height="23"  alt="Приложение PINK"></a>
     <nav class="nav container">
       <ul class="nav__list">
-        <li class="nav__item">
-          <a href="index.html">
-            <img class="nav__link nav__link--logo" src="https://via.placeholder.com/73x23" alt="Логотип приложения">
-          </a>
-        </li>
         <li class="nav__item">
           <a class="nav__link" href="index.html">
             Главная
@@ -40,66 +36,34 @@
   </header>
   <main class="page__main">
     <section class="competition">
-      <div class="container">
-        <h1 class="visually-hiden">Розыгрыш</h1>
-        <div class="competition__title">
-          <h3>Конкурс на самое безбашенное путешествие с Пинк</h3>
-        </div>
-      </div><!--container-->
+      <h1 class="visually-hiden">Розыгрыш</h1>
+      <h3 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
     </section>
-    <section class="personal-data">
+    <section class="forms">
       <h1 class="vissually hidden">Заполнение формы</h1>
       <div class="container">
-        <h5 class="personal-data__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h5>
+        <h5 class="data__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h5>
         <form class="form" action="/" method="POST">
-          <fieldset class="personal-data__field personal-data__field--user">
-            <ul class="personal-data__list">
-              <li class="personal-data__item">
+          <fieldset class="data__field">
+            <ul class="form__list">
+              <li class="form__item">
                 <label class="label" for="surename">Фамилия</label>
                 <input class="text" type="text" name="surename" id="surename" placeholder="Укажите фамилию *" required>
               </li>
-              <li class="personal-data__item">
+              <li class="form__item">
                 <label class="label" for="name">Имя</label>
                 <input class="text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </li>
-              <li class="personal-data__item">
+              <li class="form__item">
                 <label class="label" for="secondname">Отчество</label>
                 <input class="text" type="text" name="secondname" id="secondname" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
-          <div class="personal-data__app">
-            <fieldset class="personal-data__field personal-data__field--app">
-              <legend class="field__title">С каким приложением путешествовали?</legend>
-              <ul class="personal-data__list">
-                <li class="personal-data__item">
-                  <input type="checkbox" name="ios" id="ios" value="ios" checked>
-                  <label class="label label--radio" for="ios">Pink для iOS</label>
-                </li>
-                <li class="personal-data__item">
-                  <input type="checkbox" name="android" id="android" value="android">
-                  <label class="label label--radio" for="android">Pink на Android</label>
-                </li>
-                <li class="personal-data__item">
-                  <input type="checkbox" name="windows" id="windows" value="windows">
-                  <label class="label" class="label label--radio" for="windows">Windows Phone</label>
-                </li>
-              </ul>
             </fieldset>
-            <fieldset class="personal-data__field personal-data__field--contacts">
-              <legend class="field__title field__title--contacts">контактная информация</legend>
-              <div class="personal-data__field personal-data__field--phone">
-                <input type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
-                <label class="label" for="phone">Номер телефона</label>
-              </div>
-              <div class="personal-data__field personal-data__field--email">
-                <input type="text" name="email" id="email" placeholder="Введите почту *" required>
-                <label class="label" for="email">Адрес почты</label>
-              </div>
-            </fieldset>
-            <fieldset class="personal-data__field personal-data__field--achievement">
+            <fieldset class="form_field">
               <legend class="field__title field__title--achievement"></legend>
-              <ul class="personal-data__list personal-data__list--achievement">
+              <ul class="field__list field__list--achievement">
                 <li class="achievement__item">
                   <input class="checkbox" type="checkbox" name="shark" id="shark" checked>
                   <label class="label" for="shark">Сделал селфи с акулой</label>
@@ -126,11 +90,39 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="personal-data__field personal-data__field--emotions">
+            <fieldset class="form__field">
+              <legend class="field__title field__title--contacts">контактная информация</legend>
+              <div class="form__fields">
+                <input type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                <label class="label" for="phone">Номер телефона</label>
+              </div>
+              <div class="form__fields">
+                <input type="text" name="email" id="email" placeholder="Введите почту *" required>
+                <label class="label" for="email">Адрес почты</label>
+              </div>
+            </fieldset>
+            <div class="form__app">
+              <fieldset class="form__field">
+                <legend class="field__title">С каким приложением путешествовали?</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <input type="checkbox" name="ios" id="ios" value="ios" checked>
+                    <label class="label label--radio" for="ios">Pink для iOS</label>
+                  </li>
+                  <li class="form__item">
+                    <input type="checkbox" name="android" id="android" value="android">
+                    <label class="label label--radio" for="android">Pink на Android</label>
+                  </li>
+                  <li class="form__item">
+                    <input type="checkbox" name="windows" id="windows" value="windows">
+                    <label class="label" class="label label--radio" for="windows">Windows Phone</label>
+                  </li>
+                </ul>
+            </div>
+            <fieldset class="form__field">
               <legend class="field__title field__title--emotions">Опишите свои эмоции</legend>
               <textarea name="emotions" id="emotions"placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-          </div>
           <div class="personal-data personal-data--inner">
             <button class="personal-data personal-data--btn" type="button">Отправить форму</button>
             <p class="personal-data personal-data--required">* — обязательные для заполнения поля</p>
@@ -141,24 +133,21 @@
   </main>
   <footer class="page__footer">
     <div class="container">
-      <a href="index.html" class="footer__link">
+      <a href="index.html" class="footer__link--logo">
         <img src="https://via.placeholder.com/59x40" alt="Лототип PINK">
-        Pink
       </a>
       <ul class="social">
         <li class="social__link">
-          <a class="social__item social__item--twitter" href="#"></a>
+          <a class="social__item social__item--twitter" aria-label="Переход на twitter.com"  href="#"></a>
         </li>
         <li class="social__link">
-          <a class="social__item social__item--facebook" href="#"></a>
+          <a class="social__item social__item--facebook" aria-label="Переход на instagram.com" href="#"></a>
         </li>
         <li class="social__link">
-          <a class="social__item social__item--youtube" href="#"></a>
+          <a class="social__item social__item--youtube" aria-label="Переход на youtube.com" href="#"></a>
         </li>
       </ul>
-      <div class="copyright">
-        <a class="copyright__link" href="#" alt="Ссылка на Html Academy"><p class="copyright__text">Разработано</p></a>
-      </div>
+        <a class="copyright__link" href="#" aria-label="Ссылка на Html Academy"> Разработано</a>
     </div>
   </footer>
 </body>
