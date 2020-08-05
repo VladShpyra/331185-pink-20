@@ -1,0 +1,63 @@
+.download-app {
+  background-color: @background;
+}
+.download-app__title {
+  color: @white;
+  margin: 0;
+  font-weight: 300;
+  padding-top: 29px;
+  padding-bottom: 34px;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+.download::after {
+  content: url("../../img/iphone-hand-mobile@1x.png");
+  display: block;
+  width: 157px;
+  margin-bottom: 49px;
+}
+.download {
+  background: url("../../img/bg-back-mobile@1x.jpg")
+  no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.download-app__link {
+  color: @white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  position: relative;
+}
+.download__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin-top: 38px;
+  margin-bottom: 28px;
+}
+.download__item {
+  list-style-type: none;
+  width: 46px;
+  height: 58px;
+  background: no-repeat center;
+}
+.download__item--apple {
+  background-image: url(../../img/logo-apple.svg);
+}
+.download__item--android {
+  background-image: url(../../img/logo-android.svg);
+}
+.download__item--windows {
+  background-image: url(../../img/logo-microsoft.svg);
+}
+.download__access {
+  color: @white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 38px;
+}

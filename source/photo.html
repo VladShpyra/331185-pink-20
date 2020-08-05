@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
 <body class="page__body">
   <header class="page__header">
     <nav class="nav container">
       <a href="index.html">
-        <img class="nav__link nav__link--logo" src="https://via.placeholder.com/73x23" width="74" height="23"  alt="Приложение PINK">
+        <img class="nav__link nav__link--logo" src="/img/logo-pink-white-mobile.svg" width="74" height="23"  alt="Приложение PINK">
       </a>
       <ul class="nav__list">
         <li class="nav__item">
@@ -39,14 +40,14 @@
   <main class="page-main">
     <h1 class="visually-hidden">Фотографии сделанные пользователями</h1>
     <section class="gallery__title">
-      <h3>
+      <h3 class="gallery__title__text">
       Фотографии
       пользователей
       </h3>
     </section>
     <section class="gallery">
       <div class="gallery__users">
-        <h3 class="gallery__subtitile">
+        <h3 class="gallery__subtitle">
           Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </h3>
@@ -55,7 +56,7 @@
         <li class="gallery__item gallery__item--panorama">
           <div class="gallery__response">
             <p class="response__autor">
-              Анна <span>(5 минут назад)</span>
+              Анна <span class="response__time">(5 минут назад)</span>
             </p>
             <p class="response__text">
               Прыгать или нет? Напишите в
@@ -70,10 +71,10 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография автомобиля">
+            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография автомобиля">
             <div class="gallery__response">
               <p class="response__autor">
-                Левон <span>(5 часов назад)</span>
+                Левон <span class="response__time">(5 часов назад)</span>
               </p>
               <p class="response__text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
@@ -86,10 +87,10 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография барабанов">
+            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография барабанов">
             <div class="gallery__response">
               <p class="response__autor">
-                Антон <span>(12 часов назад)</span>
+                Антон <span class="response__time">(12 часов назад)</span>
               </p>
               <p class="response__text">
                 Соседи будут рады!
@@ -102,10 +103,10 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография стекляной крыши">
+            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография стекляной крыши">
             <div class="gallery__response">
               <p class="response__autor">
-                Борис <span>(20 часов назад)</span>
+                Борис <span class="response__time">(20 часов назад)</span>
               </p>
               <p class="response__text">
                 Здесь могла быть ваша цитата о высоком и вечном.
@@ -118,10 +119,10 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография ярмарка">
+            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография ярмарка">
             <div class="gallery__response">
               <p class="response__autor">
-                Сергей <span>(25 часов назад)</span>
+                Сергей <span class="response__time">(25 часов назад)</span>
               </p>
               <p class="response__text">
                 Самая кубанская в мире!
@@ -134,10 +135,10 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография с высокой горы">
+            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография с высокой горы">
             <div class="gallery__response">
               <p class="response__autor">
-                Максим <span>(40 часов назад)</span>
+                Максим <span class="response__time">(40 часов назад)</span>
               </p>
               <p class="response__text">
                 Где снег-то?
@@ -150,10 +151,10 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография крыла самолёта">
+            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография крыла самолёта">
             <div class="gallery__response">
               <p class="response__autor">
-                Надежда <span>(45 часов назад)</span>
+                Надежда <span class="response__time">(45 часов назад)</span>
               </p>
               <p class="response__text">
                 Всем GM и взаимные лайки!
@@ -196,20 +197,20 @@
   <footer class="page__footer">
     <div class="container">
       <a href="index.html" class="footer__link--logo">
-        <img src="https://via.placeholder.com/59x40" width="59" height="40" alt="Лототип PINK">
+        <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Лототип PINK">
       </a>
       <ul class="social">
-        <li class="social__link">
-          <a class="social__item social__item--twitter" aria-label="Переход на twitter.com"  href="#"></a>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" aria-label="Переход на twitter.com"  href="#"></a>
         </li>
-        <li class="social__link">
-          <a class="social__item social__item--facebook" aria-label="Переход на instagram.com" href="#"></a>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" aria-label="Переход на instagram.com" href="#"></a>
         </li>
-        <li class="social__link">
-          <a class="social__item social__item--youtube" aria-label="Переход на youtube.com" href="#"></a>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" aria-label="Переход на youtube.com" href="#"></a>
         </li>
       </ul>
-      <a class="copyright__link" href="#" aria-label="Ссылка на Html Academy"> Разработано <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Pink"></a>
+        <a class="copyright__link" href="#" aria-label="Ссылка на Html Academy"> Разработано <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Pink"></a>
     </div>
   </footer>
 </body>
