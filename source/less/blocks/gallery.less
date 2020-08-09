@@ -1,3 +1,7 @@
+.gallery__list {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .gallery__users {
   padding-left: 35px;
   padding-right: 35px;
@@ -18,11 +22,15 @@
   list-style-type: none;
 }
 .gallery__item--panorama::before {
-  content: url("../../img/panorama-mobile@1x.jpg");
+  content: url("../img/panorama-mobile@1x.jpg");
   display: block;
+}
+.gallery__response {
+  background-color: @light-gray;
 }
 .response__autor {
   color: @dark-blue;
+  margin: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;

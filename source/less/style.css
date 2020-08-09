@@ -4,7 +4,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  min-width: 320px;
+  max-width: 320px;
   width: 100%;
 }
 *,
@@ -43,6 +43,7 @@ body {
   color: #FFFFFF;
   list-style: none;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .nav__toggle {
   display: none;
@@ -94,13 +95,13 @@ body {
   background: no-repeat center;
 }
 .download__item--apple {
-  background-image: url(../../img/logo-apple.svg);
+  background-image: url(../img/logo-apple.svg);
 }
 .download__item--android {
-  background-image: url(../../img/logo-android.svg);
+  background-image: url(../img/logo-android.svg);
 }
 .download__item--windows {
-  background-image: url(../../img/logo-microsoft.svg);
+  background-image: url(../img/logo-microsoft.svg);
 }
 .download__access {
   color: #FFFFFF;
@@ -144,7 +145,7 @@ body {
   margin-bottom: 325px;
 }
 .info__description--bottom::after {
-  content: url("../../img/iphone-screen-mobile@1x.png");
+  content: url("../img/iphone-screen-mobile@1x.png");
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -165,23 +166,19 @@ body {
 .social__link {
   list-style-type: none;
   background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
 }
 .social__link--twitter {
-  width: 18px;
-  height: 15px;
-  background-image: url(../../img/icon-twitter.svg);
+  background-image: url(../img/icon-twitter.svg);
   display: block;
 }
 .social__link--facebook {
-  width: 9px;
-  height: 18px;
-  background-image: url(../../img/icon-facebook.svg);
+  background-image: url(../img/icon-facebook.svg);
   display: block;
 }
 .social__link--youtube {
-  width: 15px;
-  height: 13px;
-  background-image: url(../../img/icon-youtube.svg);
+  background-image: url(../img/icon-youtube.svg);
   display: block;
 }
 .copyright__link {
@@ -190,6 +187,10 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
+}
+.gallery__list {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .gallery__users {
   padding-left: 35px;
@@ -211,11 +212,15 @@ body {
   list-style-type: none;
 }
 .gallery__item--panorama::before {
-  content: url("../../img/panorama-mobile@1x.jpg");
+  content: url("../img/panorama-mobile@1x.jpg");
   display: block;
+}
+.gallery__response {
+  background-color: #F2F2F2;
 }
 .response__autor {
   color: #283645;
+  margin: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -244,7 +249,7 @@ body {
   line-height: 24px;
 }
 .gallery__title {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 .gallery__title__text {
@@ -258,7 +263,7 @@ body {
   padding: 36px 74px 84px 74px;
 }
 .competition {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 .competition__title {
@@ -269,5 +274,11 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  padding: 36px 74px 84px 74px;
+  padding: 36px 46px 51px 46px;
+}
+.form__field--achievement {
+  background-color: #F2F2F2;
+}
+.form__app {
+  background-color: #F2F2F2;
 }
